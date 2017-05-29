@@ -1,0 +1,44 @@
+page-meu-time {
+  .team{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px 0 12px;
+  }
+
+  .team-latest-score, .team-money{
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .player {
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-width: 1px;
+    border-color: #E1E1DE;
+    padding: 10px 0 10px 0;
+
+    p {
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0 0 0 10px;
+    }
+
+    p.score{
+      margin-left: auto;
+    }
+  }
+}
