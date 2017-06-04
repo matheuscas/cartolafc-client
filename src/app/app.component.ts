@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { Platform, NavController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MeuTimePage } from "../pages/meu-time/meu-time";
@@ -11,6 +11,7 @@ import { MinhasLigasPage } from "../pages/minhas-ligas/minhas-ligas";
 })
 export class MyApp {
   rootPage:any = MeuTimePage;
+  @ViewChild('content') nav: NavController;
 
   pages = [
    {page: MeuTimePage, text: 'Meu Time'},
@@ -28,5 +29,6 @@ export class MyApp {
 
   openPage(page){
     this.rootPage = page.page;
+    this.nav.popToRoot();
   }
 }
