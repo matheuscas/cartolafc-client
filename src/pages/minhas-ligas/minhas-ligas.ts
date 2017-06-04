@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LigaPage } from "../liga/liga";
 
 /**
  * Generated class for the MinhasLigasPage page.
@@ -19,6 +20,10 @@ export class MinhasLigasPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MinhasLigasPage');
+  }
+
+  openLeague(){
+    this.navCtrl.push(LigaPage);
   }
 
 }
