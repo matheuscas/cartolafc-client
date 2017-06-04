@@ -11,6 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SideMenuPage } from "../pages/side-menu/side-menu";
 import { MeuTimePage } from "../pages/meu-time/meu-time";
 import { MinhasLigasPage } from "../pages/minhas-ligas/minhas-ligas";
+import { LigaPage } from "../pages/liga/liga";
 
 @NgModule({
   declarations: [
@@ -19,9 +20,9 @@ import { MinhasLigasPage } from "../pages/minhas-ligas/minhas-ligas";
     ContactPage,
     HomePage,
     TabsPage,
-    SideMenuPage,
     MeuTimePage,
-    MinhasLigasPage
+    MinhasLigasPage,
+    LigaPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -34,9 +35,9 @@ import { MinhasLigasPage } from "../pages/minhas-ligas/minhas-ligas";
     ContactPage,
     HomePage,
     TabsPage,
-    SideMenuPage,
     MeuTimePage,
-    MinhasLigasPage
+    MinhasLigasPage,
+    LigaPage
   ],
   providers: [
     StatusBar,
